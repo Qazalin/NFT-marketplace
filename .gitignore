@@ -1,0 +1,6 @@
+nnode_modules
+dist
+public
+.next
+.env
+node_modules
