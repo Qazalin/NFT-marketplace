@@ -56,6 +56,18 @@ const theme = extendTheme({
         },
       },
     },
+    Text: {
+      variants: {
+        title: {
+          fontSize: 'large',
+          fontWeight: 'extrabold',
+        },
+        subtitle: {
+          fontSize: 'md',
+          color: 'gray.600',
+        },
+      },
+    },
   },
 })
 

@@ -33,7 +33,7 @@ export const NFTLayout = () => {
             <Text fontSize="large" color="gray.500">
               Ending in
             </Text>
-            <CountDown auctionDays={7} />
+            <CountDown auctionDays={7} fontSize={'xx-large'} isBold />
           </VStack>
         </Flex>
         <Box mt="40px">
