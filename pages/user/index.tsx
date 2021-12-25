@@ -1,6 +1,6 @@
 import { Box } from '@chakra-ui/layout'
-import { DashboardLayout } from '../../components/dashboardLayout'
-import { GradientCard } from '../../components/gradientCard'
+import { DashboardLayout } from '../../components/layouts/dashboardLayout'
+import { GradientCard } from '../../components/utils/gradientCard'
 const gradients = [
   ['#FF2CDF', '0014FF'],
   ['#00E1FD', '#FC007A'],

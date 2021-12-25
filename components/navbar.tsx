@@ -6,7 +6,7 @@ import { HStack } from '@chakra-ui/react'
 import { AiOutlineCompass } from 'react-icons/ai'
 import { IoWalletOutline } from 'react-icons/io5'
 import { IoIosNotificationsOutline } from 'react-icons/io'
-import { UserPreview } from './userPreview'
+import { UserPreview } from './preview/userPreview'
 import Link from 'next/link'
 export const Navbar = () => {
   return (

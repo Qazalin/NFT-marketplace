@@ -1,5 +1,5 @@
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
-import { AppLayout } from '../components/appLayout'
+import { AppLayout } from '../components/layouts/appLayout'
 
 const theme = extendTheme({
   styles: {

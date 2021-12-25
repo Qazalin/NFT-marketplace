@@ -1,11 +1,10 @@
 import { Box, Divider } from '@chakra-ui/layout'
-import { Navbar } from './navbar'
-import { DashboardSideBar, NFTSideBar } from './sideBar'
+import { Navbar } from '../navbar'
+import { DashboardSideBar, NFTSideBar } from '../sideBar'
 import { useRouter } from 'next/router'
 
 export const AppLayout = ({ children }) => {
   const router = useRouter()
-  console.log(router.pathname)
 
   return (
     <Box width="100vw" height="100vh" p="20px">

@@ -1,9 +1,10 @@
 import { Box, Flex } from '@chakra-ui/layout'
 import { Image, Text, IconButton } from '@chakra-ui/react'
-import { BiChevronDown } from 'react-icons/bi'
+import { IoOpenOutline } from 'react-icons/io5'
 import { useStoreActions } from 'easy-peasy'
 import { useState } from 'react'
 import Link from 'next/link'
+import { ExternalLinks } from '../utils/externalLinks'
 
 export const UserPreview = () => {
   return (
@@ -20,21 +21,17 @@ export const UserPreview = () => {
         </Flex>
       </Box>
       <Box ml="10px">
-        <Link href={'/user'}>
-          <Image
-            src={'https://i.postimg.cc/bYM5509X/model.jpg'}
-            borderRadius="100%"
-            height="60px"
-            width="60px"
-          />
-        </Link>
+        <Image
+          src={'https://i.postimg.cc/bYM5509X/model.jpg'}
+          borderRadius="100%"
+          height="60px"
+          width="60px"
+        />
       </Box>
-      <IconButton
-        icon={<BiChevronDown fontSize="20px" />}
-        aria-label="close"
-        colorScheme="white"
-        bg="none"
-        variant="link"
+      <ExternalLinks
+        link={
+          'https://etherscan.io/address/0x7c9ceff6479439bf14621a09ca8ab5635a26bd00'
+        }
       />
     </Flex>
   )

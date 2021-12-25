@@ -1,7 +1,7 @@
 import { Box, Grid, Flex, Center, VStack } from '@chakra-ui/layout'
 import { Text, AspectRatio, Image } from '@chakra-ui/react'
-import AuctionButtons from './auctionButtons'
-import CountDown from './countDown'
+import AuctionButtons from '../utils/auctionButtons'
+import CountDown from '../utils/countDown'
 // import Image from 'next/image'
 export const NFTLayout = () => {
   return (
@@ -37,7 +37,11 @@ export const NFTLayout = () => {
           </VStack>
         </Flex>
         <Box mt="40px">
-          <AuctionButtons />
+          <AuctionButtons
+            externalLink={
+              'https://opensea.io/assets/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/4288'
+            }
+          />
         </Box>
         <Box mt="40px">
           <Text color="gray.600" fontSize={'large'}>

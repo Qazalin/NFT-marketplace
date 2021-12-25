@@ -7,9 +7,9 @@ import {
   Tooltip,
   Legend,
 } from 'recharts'
-import { lineChartData } from '../server/mocks'
+import { lineChartData } from '../../server/mocks'
 import { Box } from '@chakra-ui/layout'
-import CustomTooltip from './customToolTip'
+import CustomTooltip from '../utils/customToolTip'
 export const PortfolioChart = () => {
   return (
     <Box p="10px">

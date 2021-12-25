@@ -4,6 +4,7 @@ import { Text } from '@chakra-ui/react'
 
 const CountDown = ({ auctionDays, fontSize, isBold }) => {
   const date = auctionDays * 24 * 60 * 60 * 1000
+
   return (
     <Box>
       <Text

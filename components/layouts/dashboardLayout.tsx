@@ -1,9 +1,10 @@
 import { Grid, GridItem, Box } from '@chakra-ui/react'
-import { NFTPreviw } from './nftPreview'
-import { activities, topProjects } from '../server/mocks'
-import { ListTemplate } from './ListTemplate'
-import { PortfolioChart } from './portfolioChart'
-import { GradientCard } from './gradientCard'
+import { NFTPreviw } from '../preview/nftPreview'
+import { activities, topProjects } from '../../server/mocks'
+import { ListTemplate } from '../utils/ListTemplate'
+import { PortfolioChart } from '../charts/portfolioChart'
+import { GradientCard } from '../utils/gradientCard'
+import { dashboardData } from '../../server/mocks'
 
 export const DashboardLayout = () => {
   return (
@@ -18,7 +19,14 @@ export const DashboardLayout = () => {
         <ListTemplate title="Recent Activities" listData={activities} />
       </GridItem>
       <GridItem colSpan={2}>
-        <NFTPreviw />
+        <NFTPreviw
+          image={dashboardData.image}
+          title={dashboardData.title}
+          price={dashboardData.price}
+          pageLink={dashboardData.externalLink}
+          externalLink={dashboardData.externalLink}
+          auctionDays={dashboardData.auctionDays}
+        />
       </GridItem>
       <GridItem colSpan={2}>
         <ListTemplate title="Top Projects" listData={topProjects} />

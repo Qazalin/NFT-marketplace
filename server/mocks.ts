@@ -63,3 +63,11 @@ export const lineChartData = [
     amt: 2100,
   },
 ]
+
+export const dashboardData = {
+  image: 'https://static.nftgo.io/cryptopunk/cryptopunk9598.png',
+  title: 'CryptoPunk #9598',
+  price: '59.95 ETH',
+  auctionDays: 7,
+  externalLink: 'https://www.larvalabs.com/cryptopunks/details/9598',
+}
