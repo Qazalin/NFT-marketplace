@@ -1,8 +1,8 @@
-import { Button, ButtonGroup, LinkOverlay } from '@chakra-ui/react'
+import { Button, ButtonGroup, Link } from '@chakra-ui/react'
 
 const AuctionButtons = ({ externalLink }) => {
   return (
-    <LinkOverlay href={externalLink} isExternal>
+    <Link href={externalLink} isExternal>
       <ButtonGroup spacing={5} width={'90%'}>
         <Button width={'50%'} bg="white" color="black" fontSize={'large'}>
           Buy now
@@ -11,7 +11,7 @@ const AuctionButtons = ({ externalLink }) => {
           Place a bid
         </Button>
       </ButtonGroup>
-    </LinkOverlay>
+    </Link>
   )
 }
 export default AuctionButtons

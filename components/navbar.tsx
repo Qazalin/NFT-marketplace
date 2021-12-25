@@ -16,28 +16,30 @@ export const Navbar = () => {
           sx={{ width: '90px' }}
           icon={<BsHandbag fontSize="20px" />}
           aria-label="close"
-          colorScheme="white"
+          colorScheme="bag"
           bg="gray.700"
           variant="link"
         />
         <IconButton
           icon={<BiBarChartSquare fontSize="20px" />}
           aria-label="close"
-          colorScheme="white"
+          colorScheme="chart"
           bg="gray.700"
           variant="link"
         />
-        <IconButton
-          icon={<AiOutlineCompass fontSize="20px" />}
-          aria-label="close"
-          colorScheme="white"
-          bg="gray.700"
-          variant="link"
-        />
+        <Link href="/explore">
+          <IconButton
+            icon={<AiOutlineCompass fontSize="20px" />}
+            aria-label="close"
+            colorScheme="compass"
+            bg="gray.700"
+            variant="link"
+          />
+        </Link>
         <IconButton
           icon={<IoWalletOutline fontSize="20px" />}
           aria-label="close"
-          colorScheme="white"
+          colorScheme="wallet"
           bg="gray.700"
           variant="link"
         />
