@@ -12,14 +12,16 @@ export const Navbar = () => {
   return (
     <Box>
       <HStack spacing="10px">
-        <IconButton
-          sx={{ width: '90px' }}
-          icon={<BsHandbag fontSize="20px" />}
-          aria-label="close"
-          colorScheme="bag"
-          bg="gray.700"
-          variant="link"
-        />
+        <Link href="/wallet">
+          <IconButton
+            sx={{ width: '90px' }}
+            icon={<BsHandbag fontSize="20px" />}
+            aria-label="close"
+            colorScheme="bag"
+            bg="gray.700"
+            variant="link"
+          />
+        </Link>
         <IconButton
           icon={<BiBarChartSquare fontSize="20px" />}
           aria-label="close"
@@ -36,13 +38,15 @@ export const Navbar = () => {
             variant="link"
           />
         </Link>
-        <IconButton
-          icon={<IoWalletOutline fontSize="20px" />}
-          aria-label="close"
-          colorScheme="wallet"
-          bg="gray.700"
-          variant="link"
-        />
+        <Link href="/wallet">
+          <IconButton
+            icon={<IoWalletOutline fontSize="20px" />}
+            aria-label="close"
+            colorScheme="wallet"
+            bg="gray.700"
+            variant="link"
+          />
+        </Link>
         <Spacer />
         <Box height="20px">
           <UserPreview />
