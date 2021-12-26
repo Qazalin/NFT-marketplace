@@ -22,13 +22,15 @@ export const Navbar = () => {
             variant="link"
           />
         </Link>
-        <IconButton
-          icon={<BiBarChartSquare fontSize="20px" />}
-          aria-label="close"
-          colorScheme="chart"
-          bg="gray.700"
-          variant="link"
-        />
+        <Link href="/analytics">
+          <IconButton
+            icon={<BiBarChartSquare fontSize="20px" />}
+            aria-label="close"
+            colorScheme="chart"
+            bg="gray.700"
+            variant="link"
+          />
+        </Link>
         <Link href="/explore">
           <IconButton
             icon={<AiOutlineCompass fontSize="20px" />}

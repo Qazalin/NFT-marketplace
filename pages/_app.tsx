@@ -66,6 +66,10 @@ const theme = extendTheme({
           fontSize: 'md',
           color: 'gray.600',
         },
+        normal: {
+          fontWeight: 'bold',
+          fontSize: '2xl',
+        },
       },
     },
   },

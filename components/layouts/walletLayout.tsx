@@ -13,8 +13,8 @@ import {
   AiOutlineArrowDown,
   AiFillPlusCircle,
 } from 'react-icons/ai'
-import { ActvityChart } from '../charts/activityChart'
-import { BalanceChart } from '../charts/balanceChart'
+import { ActivityPieChart } from '../charts/activityPie'
+import { BalancePieChart } from '../charts/balancePie'
 export const WalletLayout = () => {
   return (
     <Box>
@@ -58,10 +58,10 @@ export const WalletLayout = () => {
       </VStack>
       <HStack>
         <Box>
-          <BalanceChart />
+          <BalancePieChart />
         </Box>
         <Box>
-          <ActvityChart />
+          <ActivityPieChart />
         </Box>
       </HStack>
     </Box>
