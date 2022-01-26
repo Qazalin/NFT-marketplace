@@ -20,6 +20,5 @@ analytics (powered by recharts):
 [![Analytics](https://i.postimg.cc/3JBWFJP0/Screen-Shot-1400-10-05-at-17-14-00.png)](https://postimg.cc/ykDVVB67)
 
 # Future development🌙
-Add wallet connection<br/>
+Add wallet connection✅<br/>
 Interaction with the blockchain on the backend<br/>
-More comprehensive data analysis<br/>
