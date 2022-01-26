@@ -1,5 +1,7 @@
 import { ChakraProvider, extendTheme } from '@chakra-ui/react'
 import { AppLayout } from '../components/layouts/appLayout'
+import { DAppProvider } from '@usedapp/core'
+import { web3Config } from './web3Config'
 
 const theme = extendTheme({
   styles: {
@@ -78,9 +80,11 @@ const theme = extendTheme({
 const MyApp = ({ Component, pageProps }) => {
   return (
     <ChakraProvider theme={theme}>
-      <AppLayout>
-        <Component {...pageProps} />
-      </AppLayout>
+      <DAppProvider config={web3Config}>
+        <AppLayout>
+          <Component {...pageProps} />
+        </AppLayout>
+      </DAppProvider>
     </ChakraProvider>
   )
 }

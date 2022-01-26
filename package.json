@@ -9,6 +9,7 @@
     "@chakra-ui/react": "^1.6.12",
     "@emotion/react": "^11.5.0",
     "@emotion/styled": "^11.3.0",
+    "@usedapp/core": "^0.10.0",
     "body-parser": "^1.19.0",
     "dotenv-load": "^2.0.0",
     "easy-peasy": "^5.0.4",

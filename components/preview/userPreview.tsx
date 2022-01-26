@@ -5,34 +5,12 @@ import { useStoreActions } from 'easy-peasy'
 import { useState } from 'react'
 import Link from 'next/link'
 import { ExternalLinks } from '../utils/externalLinks'
+import ConnectButton from '../utils/connectWallet'
 
 export const UserPreview = () => {
   return (
     <Flex>
-      <Box>
-        <Text variant="title">Veronika Smith</Text>
-        <Flex>
-          <Text mr="3px" variant="subtitle">
-            18.0094
-          </Text>
-          <Text ml="3px" color={'pink.100'}>
-            ETH
-          </Text>
-        </Flex>
-      </Box>
-      <Box ml="10px">
-        <Image
-          src={'https://i.postimg.cc/bYM5509X/model.jpg'}
-          borderRadius="100%"
-          height="60px"
-          width="60px"
-        />
-      </Box>
-      <ExternalLinks
-        link={
-          'https://etherscan.io/address/0x7c9ceff6479439bf14621a09ca8ab5635a26bd00'
-        }
-      />
+      <ConnectButton />
     </Flex>
   )
 }
